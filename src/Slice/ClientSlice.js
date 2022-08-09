@@ -25,4 +25,4 @@ const clientSlice = createSlice({
 
 const { actions, reducer } = clientSlice;
 export default reducer;
-const { addClient, deleteClient } = actions;
+export const { addClient, deleteClient } = actions;
