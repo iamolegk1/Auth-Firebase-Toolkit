@@ -8,7 +8,7 @@ import "./firebase";
 
 import App from "./App";
 
-import "./index.css";
+import "./styles/main.css";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
