@@ -1,9 +1,10 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import MainPage from "../../pages/MainPage";
-import LoginPage from "../../pages/LoginPage";
-import RegisterPage from "../../pages/RegisterPage";
-import NotFoundPage from "../../pages/NotFoundPage";
+import MainPage from "../pages/MainPage";
+import LoginPage from "../pages/LoginPage";
+import RegisterPage from "../pages/RegisterPage";
+import NotFoundPage from "../pages/NotFoundPage";
 
 const App = () => {
   return (

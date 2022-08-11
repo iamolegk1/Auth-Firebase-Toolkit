@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -6,9 +7,10 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { addClient } from "../../Slice/ClientSlice";
 import BasicForm from "../BasicForm";
 import Portal from "../Portal";
+import ErrorAlert from "../ErrorAlert";
 
 const Login = () => {
-  const [isOpenErrorModal, setIsOpenErrorModal] = useState(false);
+  const [isOpenErrorAlert, SetIsOpenErrorAlert] = useState(false);
 
   const history = useNavigate();
   const dispatch = useDispatch();
@@ -26,7 +28,7 @@ const Login = () => {
         );
         history("/");
       })
-      .catch(() => setIsOpenErrorModal(true));
+      .catch(() => SetIsOpenErrorAlert(true));
   };
 
   const fieldsData = {
@@ -41,9 +43,11 @@ const Login = () => {
   return (
     <>
       <BasicForm dataForm={fieldsData} handleClick={handleLogin} />
-      {isOpenErrorModal && (
+      {isOpenErrorAlert && (
         <Portal>
-          <p>Portal</p>
+          <ErrorAlert
+            textError={"We cannot find an account with that email address "}
+          />
         </Portal>
       )}
     </>

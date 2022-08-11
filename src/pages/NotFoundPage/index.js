@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 const NotFoundPage = () => {
@@ -15,7 +16,8 @@ const NotFoundPage = () => {
                 The page you’re looking for doesn’t exist.
               </p>
               <Link
-                className="px-6 py-2 text-sm font-semibold text-blue-800 bg-blue-100"
+                className="py-2 px-5 text-lg font-semibold text-blue-800
+                bg-blue-100 hover:bg-blue-600 hover:text-white rounded transition ease-in duration-150"
                 to="/login"
               >
                 Go back
