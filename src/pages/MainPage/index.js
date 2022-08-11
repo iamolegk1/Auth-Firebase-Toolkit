@@ -1,12 +1,13 @@
+import React from "react";
 import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Content from "../../components/Content";
+import MainPageContent from "../../components/MainPageContent";
 
 const MainPage = () => {
   const { id } = useSelector((state) => state.client);
   const clientAuthorized = !!id;
 
-  return clientAuthorized ? <Content /> : <Navigate to="/login" />;
+  return clientAuthorized ? <MainPageContent /> : <Navigate to="/login" />;
 };
 
 export default MainPage;
