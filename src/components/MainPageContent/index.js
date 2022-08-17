@@ -11,8 +11,8 @@ const MainPageContent = () => {
   return (
     <>
       <IconToggleMode />
-      <div className="min-h-full">
-        <div className="bg-blue-50 dark:bg-indigo-900 p-4 flex justify-between items-center">
+      <div className="h-full flex flex-col ">
+        <header className="bg-blue-50 dark:bg-indigo-900 p-4 flex justify-between items-center">
           <div className="flex items-center">
             <p className="cursor-pointer inline-block p-2 text-blue-500 dark:text-blue-100 hover:text-blue-800 mr-2 font-medium">
               Pet Catalog
@@ -31,8 +31,8 @@ const MainPageContent = () => {
           >
             Log out
           </button>
-        </div>
-        <div className="flex py-20 px-10 bg-white dark:bg-indigo-800 h-[800px]">
+        </header>
+        <main className="flex py-20 px-10 bg-white dark:bg-indigo-800 h-full">
           <div>
             <h2 className="text-2xl md:text-4xl lg:text-6xl text-blue-500 dark:text-blue-100 mb-6 mt-24 w-[700px] ">
               Welcome To The Dog's World!
@@ -52,8 +52,8 @@ const MainPageContent = () => {
             src="https://cdn.pixabay.com/photo/2018/03/27/21/57/animal-3267564_960_720.jpg"
             alt="Logo"
           />
-        </div>
-        <footer className="p-6 bg-blue-500 dark:bg-indigo-900 text-white dark:text-blue-100 flex justify-center">
+        </main>
+        <footer className="p-6 w-full fixed bottom-0 bg-blue-500 dark:bg-indigo-900 text-white dark:text-blue-100 flex justify-center">
           <div className="flex items-center">
             &copy; WorldDogs {currentYear}
           </div>

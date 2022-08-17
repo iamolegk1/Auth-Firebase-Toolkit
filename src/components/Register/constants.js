@@ -1,5 +1,5 @@
-import { DEFAULT_INITIAL_VALUES } from "../BasicForm/constants";
 import { formFields as basicFormFields } from "../BasicForm/constants";
+import { DEFAULT_INITIAL_VALUES } from "../BasicForm/constants";
 
 export const formFields = {
   ...basicFormFields,

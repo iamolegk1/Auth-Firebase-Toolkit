@@ -1,4 +1,5 @@
 import * as Yup from "yup";
+
 import { formFields } from "./constants";
 
 export const BASIC_EMAIL_VALIDATION = Yup.string()
