@@ -1,6 +1,6 @@
 # auth-firebase-toolkit
 
-This is a Authorization-Firebase project using the following technologies:
+This is a Auth-Firebase project using the following technologies:
 
 React, Redux Toolkit, Firebase, Formik, Yup and React Router for the frontend
 
