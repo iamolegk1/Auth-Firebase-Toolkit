@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+
 import client from "../Slice/ClientSlice";
 
 const store = configureStore({

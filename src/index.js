@@ -5,9 +5,7 @@ import { Provider } from "react-redux";
 
 import store from "./store";
 import "./firebase";
-
-import App from "./App";
-
+import App from "./app";
 import "./styles/main.css";
 
 const container = document.getElementById("root");
