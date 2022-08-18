@@ -1,4 +1,4 @@
-# auth-firebase-toolkit
+# Auth-Firebase-Toolkit
 
 This is a Auth-Firebase project using the following technologies:
 
