@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { addClient } from "../../Slice/ClientSlice";
 
+import { addClient } from "../../Slice/ClientSlice";
 import BasicForm from "../BasicForm";
 import Portal from "../Portal";
 import ErrorAlert from "../ErrorAlert";

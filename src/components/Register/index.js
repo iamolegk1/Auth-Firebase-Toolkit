@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux/es/exports";
-
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { addClient } from "../../Slice/ClientSlice";
 
+import { addClient } from "../../Slice/ClientSlice";
 import BasicForm from "../BasicForm";
 import FormikCheckbox from "../FormikCheckbox";
 import { validationSchema } from "./validation";
