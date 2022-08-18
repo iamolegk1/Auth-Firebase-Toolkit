@@ -6,6 +6,5 @@ React, Redux Toolkit, Firebase, Formik, Yup and React Router for the frontend
 
 Tailwind for styles 
 
-![Video_220818190519(2)](https://user-images.githubusercontent.com/86320945/185444321-8f20a8cd-55ce-4ca6-a0c9-f5d4b77028fd.gif)
-
+https://user-images.githubusercontent.com/86320945/185444502-e6c580b3-f15c-4fa5-8800-45f18d9252db.mp4
 
